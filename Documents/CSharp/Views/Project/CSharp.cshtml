@@ -1,0 +1,148 @@
+@{
+    ViewData["Title"] = "Profile";
+}
+
+<div class="row">
+    <div class="col-sm-3 position-fixed">
+        <div class="row ">
+            <div class="col-sm-10 pt-3 bg-white border p-2 rounded collapse collapse-horizontal" id="hamburguerMenu"
+                style="height: 100vh">
+                <div class="row mb-3">
+                    <div class="col-sm-10">
+                        <div <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="CSharp">
+                            <img src="https://assets-global.website-files.com/6047a9e35e5dc54ac86ddd90/63065002cd563e1cd1cead28_eaadfe64.png"
+                                alt="Bootstrap" width="40" height="40">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-sm-1">
+                        <div data-bs-toggle="collapse" data-bs-target="#hamburguerMenu" aria-expanded="false">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor"
+                                class="bi bi-x-lg" viewBox="0 0 16 16">
+                                <path
+                                    d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z" />
+                            </svg>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="row mb-3">
+                    <div class="col-sm-12">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item justify-content-between align-items-start d-flex">
+                                Projetos
+                                <span class="badge text-bg-primary rounded-pill">14</span>
+                            </li>
+                            <li class="list-group-item justify-content-between align-items-start d-flex">
+                                Artigos
+                                <span class="badge text-bg-primary rounded-pill">8</span>
+                            </li>
+                            <li style="cursor: pointer" class="list-group-item pointer">
+                                <span data-bs-toggle="collapse" data-bs-target="#anotacoes"
+                                    aria-expanded="false">Anotações</span>
+                                <ul class="list-group list-group-flush collapse" id="anotacoes">
+                                    <li class="list-group-item justify-content-between align-items-start d-flex">
+                                        Estudos
+                                        <span class="badge text-bg-primary rounded-pill">10</span>
+                                    </li>
+                                    <li class="list-group-item justify-content-between align-items-start d-flex">
+                                        Rascunhos
+                                        <span class="badge text-bg-primary rounded-pill">4</span>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12">
+                <div class="btn" data-bs-toggle="collapse" data-bs-target="#hamburguerMenu" aria-expanded="false">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor"
+                        class="bi bi-list" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-12 mt-5" style="height: 1000vh;">
+        <div class="row justify-content-center d-flex m-3">
+            <div class="col-sm-6 border rounded fs-4 fw-medium text-justify p-3">
+                Atualizações da comunidade
+                <br>
+                <span class="fs-6 fw-normal text-center">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis mollitia nostrum!
+
+                </span>
+            </div>
+        </div>
+        <div class="row justify-content-center d-flex m-3" style="font-size: 80%;">
+            <div class="col-sm-6 rounded border text-justify">
+                <div class="row justify-content-start d-flex m-3">
+                    <div class="col-sm-1 justify-content-start d-flex">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                            class="bi bi-person-circle" viewBox="0 0 16 16">
+                            <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
+                            <path fill-rule="evenodd"
+                                d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1" />
+                        </svg>
+                    </div>
+
+                    <div class="col-sm-10 justify-content-start d-flex">Amanda Pereira &nbsp &nbsp
+                        <span class="text-body-secondary">Criou um novo projeto</span>
+                    </div>
+                </div>
+
+                <div class="row justify-content-start d-flex m-3 text-body-secondary">
+                    <div class="col-sm-1 justify-content-start d-flex">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="black"
+                            class="bi bi-person-circle" viewBox="0 0 16 16">
+                            <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
+                            <path fill-rule="evenodd"
+                                d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1" />
+                        </svg>
+                    </div>
+                    <div class="col-sm-6 justify-content-start d-flex">constpereiradev/CSharp</div>
+                </div>
+                <div class="row justify-content-start d-flex m-3 text-body-secondary">
+                    <div class="col-sm-12 justify-content-start d-flex">Projeto com CSharp</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row justify-content-center d-flex m-3" style="font-size: 80%;">
+            <div class="col-sm-6 rounded border text-justify">
+                <div class="row justify-content-start d-flex m-3">
+                    <div class="col-sm-1 justify-content-start d-flex">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                            class="bi bi-person-circle" viewBox="0 0 16 16">
+                            <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
+                            <path fill-rule="evenodd"
+                                d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1" />
+                        </svg>
+                    </div>
+
+                    <div class="col-sm-10 justify-content-start d-flex">Amanda Pereira &nbsp &nbsp
+                        <span class="text-body-secondary">Criou um novo projeto</span>
+                    </div>
+                </div>
+
+                <div class="row justify-content-start d-flex m-3 text-body-secondary">
+                    <div class="col-sm-1 justify-content-start d-flex">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="black"
+                            class="bi bi-person-circle" viewBox="0 0 16 16">
+                            <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
+                            <path fill-rule="evenodd"
+                                d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1" />
+                        </svg>
+                    </div>
+                    <div class="col-sm-6 justify-content-start d-flex">constpereiradev/CSharp</div>
+                </div>
+                <div class="row justify-content-start d-flex m-3 text-body-secondary">
+                    <div class="col-sm-12 justify-content-start d-flex">Projeto com CSharp</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

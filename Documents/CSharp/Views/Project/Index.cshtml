@@ -1,0 +1,228 @@
+@{
+    ViewData["Title"] = "Profile";
+}
+
+<div class="row">
+    <div class="col-sm-3 position-fixed">
+        <div class="row ">
+            <div class="col-sm-10 pt-3 bg-white border p-2 rounded collapse collapse-horizontal" id="hamburguerMenu"
+                style="height: 100vh">
+                <div class="row mb-3">
+                    <div class="col-sm-10">
+                        <div <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="CSharp">
+                            <img src="https://assets-global.website-files.com/6047a9e35e5dc54ac86ddd90/63065002cd563e1cd1cead28_eaadfe64.png"
+                                alt="Bootstrap" width="40" height="40">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-sm-1">
+                        <div data-bs-toggle="collapse" data-bs-target="#hamburguerMenu" aria-expanded="false">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor"
+                                class="bi bi-x-lg" viewBox="0 0 16 16">
+                                <path
+                                    d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z" />
+                            </svg>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="row mb-3">
+                    <div class="col-sm-12">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item justify-content-between align-items-start d-flex">
+                                Projetos
+                                <span class="badge text-bg-primary rounded-pill">14</span>
+                            </li>
+                            <li class="list-group-item justify-content-between align-items-start d-flex">
+                                Artigos
+                                <span class="badge text-bg-primary rounded-pill">8</span>
+                            </li>
+                            <li style="cursor: pointer" class="list-group-item pointer">
+                                <span data-bs-toggle="collapse" data-bs-target="#anotacoes"
+                                    aria-expanded="false">Anotações</span>
+                                <ul class="list-group list-group-flush collapse" id="anotacoes">
+                                    <li class="list-group-item justify-content-between align-items-start d-flex">
+                                        Estudos
+                                        <span class="badge text-bg-primary rounded-pill">10</span>
+                                    </li>
+                                    <li class="list-group-item justify-content-between align-items-start d-flex">
+                                        Rascunhos
+                                        <span class="badge text-bg-primary rounded-pill">4</span>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12">
+                <div class="btn" data-bs-toggle="collapse" data-bs-target="#hamburguerMenu" aria-expanded="false">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor"
+                        class="bi bi-list" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-12 mt-5" style="height: 1000vh;">
+        <div class="row justify-content-center d-flex m-3">
+            <div class="col-sm-6 border rounded fs-4 fw-medium text-justify p-3">
+                Área de projetos
+                <br>
+                <span class="fs-6 fw-normal text-center">
+                    Organize seus projetos feitos e utilize essa área de portfólio.
+
+                </span>
+            </div>
+        </div>
+        <div class="row justify-content-center d-flex m-3" style="font-size: 80%;">
+            <div class="col-sm-6 rounded border text-justify">
+                <div class="row justify-content-start d-flex m-3">
+                    <div class="col-sm-1 justify-content-start d-flex">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                            class="bi bi-person-circle" viewBox="0 0 16 16">
+                            <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
+                            <path fill-rule="evenodd"
+                                d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1" />
+                        </svg>
+                    </div>
+
+                    <div class="col-sm-10 justify-content-start d-flex">Amanda Pereira &nbsp &nbsp
+                        <span class="text-body-secondary">Criou o projeto CSharp</span>
+                    </div>
+                </div>
+
+                <div class="row justify-content-start d-flex m-3 text-body-secondary">
+                    <div class="col-sm-1 justify-content-start d-flex">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="black"
+                            class="bi bi-person-circle" viewBox="0 0 16 16">
+                            <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
+                            <path fill-rule="evenodd"
+                                d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1" />
+                        </svg>
+                    </div>
+                    <div class="col-sm-6 justify-content-start d-flex">constpereiradev/CSharp</div>
+                </div>
+                <div class="row justify-content-start d-flex m-3 text-body-secondary">
+                    <div class="col-sm-12 justify-content-start d-flex">Projeto com CSharp</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row justify-content-center d-flex m-3" style="font-size: 80%;">
+            <div class="col-sm-6 rounded border text-justify">
+                <div class="row justify-content-start d-flex m-3">
+                    <div class="col-sm-1 justify-content-start d-flex">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                            class="bi bi-person-circle" viewBox="0 0 16 16">
+                            <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
+                            <path fill-rule="evenodd"
+                                d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1" />
+                        </svg>
+                    </div>
+
+                    <div class="col-sm-10 justify-content-start d-flex">Amanda Pereira &nbsp &nbsp
+                        <span data-bs-toggle="modal" data-bs-target="#novoProjetoModal" class="text-body-secondary">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="black"
+                                class="bi bi-plus-circle-fill" viewBox="0 0 16 16">
+                                <path
+                                    d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3z" />
+                            </svg>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="row justify-content-start d-flex m-3 text-body-secondary">
+                    <div class="col-sm-6 justify-content-start d-flex">Adicione um novo projeto.</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal novo projeto -->
+        <div class="modal fade" id="novoProjetoModal" tabindex="-1" aria-labelledby="novoProjetoModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered p-3 modal-lg">
+                <div class="modal-content p-3">
+                    <div class="col-sm-12">
+                        <div class="row mb-5">
+                            <div class="col-sm-10 justify-content-center d-flex">
+                                <h1 class="modal-title fs-5 justify-content-center d-flex" id="novoProjetoModalLabel">
+                                    Adicione um novo projeto</h1>
+                            </div>
+                            <div class="col-sm-2">
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12">
+                        <div class="row mb-3">
+                            <div class="col-sm-8">
+                                <div class="row mb-3">
+                                    <div class="col-sm-12 justify-content-center d-flex">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                                            fill="currentColor" class="bi bi-cloud-arrow-down-fill" viewBox="0 0 16 16">
+                                            <path
+                                                d="M8 2a5.53 5.53 0 0 0-3.594 1.342c-.766.66-1.321 1.52-1.464 2.383C1.266 6.095 0 7.555 0 9.318 0 11.366 1.708 13 3.781 13h8.906C14.502 13 16 11.57 16 9.773c0-1.636-1.242-2.969-2.834-3.194C12.923 3.999 10.69 2 8 2m2.354 6.854-2 2a.5.5 0 0 1-.708 0l-2-2a.5.5 0 1 1 .708-.708L7.5 9.293V5.5a.5.5 0 0 1 1 0v3.793l1.146-1.147a.5.5 0 0 1 .708.708" />
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="row mb-3 ">
+                                    <div class="col-sm-12 justify-content-center d-flex">Clique para escolher arquivo ou
+                                        arraste e solte</div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-12 justify-content-center d-flex"><input type="file" id="img"
+                                            name="img" accept="image/*"></div>
+                                </div>
+                                <div class="row mb-3 text-body-secondary">
+                                    <div class="col-sm-12 justify-content-center d-flex">pdf, svg...</div>
+                                </div>
+
+                                <div class="row mb-3">
+                                    <label for="nomeProjetoInput" class="form-label">Nome do projeto</label>
+                                    <div class="col-sm-12 justify-content-center d-flex">
+                                        <input type="text" class="form-control" id="nomeProjetoInput">
+                                    </div>
+                                </div>
+                                <div class="row mb-3">
+                                    <label for="descricaoProjetoInput" class="form-label">Descrição</label>
+                                    <div class="form-floating">
+                                        <textarea class="form-control" id="descricaoProjeto"
+                                            style="height: 100px"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="row mb-3">
+                                </div>
+                                <div class="row mb-3 ">
+                                    <div class="col-sm-12 justify-content-center d-flex">Membros</div>
+                                </div>
+                                <div class="row mb-3 text-body-secondary">
+                                    <div class="col-sm-12 justify-content-center d-flex">Caso alguém tenha colaborado com você.</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12">
+                        <div class="row">
+                            <div class="col-sm-6 justify-content-center d-flex">
+                                <button type="button" class="btn btn-outline-secondary ps-5 pe-5"
+                                    data-bs-dismiss="modal">Fechar</button>
+                            </div>
+                            <div class="col-sm-6 justify-content-center d-flex">
+                                <button type="button" class="btn btn-primary ps-5 pe-5">Salvar</button>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
