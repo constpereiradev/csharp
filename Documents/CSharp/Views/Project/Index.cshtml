@@ -1,71 +1,9 @@
 @{
-    ViewData["Title"] = "Profile";
+    ViewData["Title"] = "Projects";
 }
 
 <div class="row">
-    <div class="col-sm-3 position-fixed">
-        <div class="row ">
-            <div class="col-sm-10 pt-3 bg-white border p-2 rounded collapse collapse-horizontal" id="hamburguerMenu"
-                style="height: 100vh">
-                <div class="row mb-3">
-                    <div class="col-sm-10">
-                        <div <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="CSharp">
-                            <img src="https://assets-global.website-files.com/6047a9e35e5dc54ac86ddd90/63065002cd563e1cd1cead28_eaadfe64.png"
-                                alt="Bootstrap" width="40" height="40">
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-sm-1">
-                        <div data-bs-toggle="collapse" data-bs-target="#hamburguerMenu" aria-expanded="false">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor"
-                                class="bi bi-x-lg" viewBox="0 0 16 16">
-                                <path
-                                    d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z" />
-                            </svg>
-                        </div>
-                    </div>
-
-                </div>
-                <div class="row mb-3">
-                    <div class="col-sm-12">
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item justify-content-between align-items-start d-flex">
-                                Projetos
-                                <span class="badge text-bg-primary rounded-pill">14</span>
-                            </li>
-                            <li class="list-group-item justify-content-between align-items-start d-flex">
-                                Artigos
-                                <span class="badge text-bg-primary rounded-pill">8</span>
-                            </li>
-                            <li style="cursor: pointer" class="list-group-item pointer">
-                                <span data-bs-toggle="collapse" data-bs-target="#anotacoes"
-                                    aria-expanded="false">Anotações</span>
-                                <ul class="list-group list-group-flush collapse" id="anotacoes">
-                                    <li class="list-group-item justify-content-between align-items-start d-flex">
-                                        Estudos
-                                        <span class="badge text-bg-primary rounded-pill">10</span>
-                                    </li>
-                                    <li class="list-group-item justify-content-between align-items-start d-flex">
-                                        Rascunhos
-                                        <span class="badge text-bg-primary rounded-pill">4</span>
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-12">
-                <div class="btn" data-bs-toggle="collapse" data-bs-target="#hamburguerMenu" aria-expanded="false">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor"
-                        class="bi bi-list" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd"
-                            d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
-                    </svg>
-                </div>
-            </div>
-        </div>
-    </div>
+   
     <div class="col-sm-12 mt-5" style="height: 1000vh;">
         <div class="row justify-content-center d-flex m-3">
             <div class="col-sm-6 border rounded fs-4 fw-medium text-justify p-3">
@@ -135,7 +73,7 @@
                 </div>
 
                 <div class="row justify-content-start d-flex m-3 text-body-secondary">
-                    <div class="col-sm-6 justify-content-start d-flex">Adicione um novo projeto.</div>
+                    <div class="col-sm-6 justify-content-start d-flex">Adicione um novo projeto. </div>
                 </div>
             </div>
         </div>
@@ -143,47 +81,39 @@
         <!-- Modal novo projeto -->
         <div class="modal fade" id="novoProjetoModal" tabindex="-1" aria-labelledby="novoProjetoModalLabel"
             aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered p-3 modal-lg">
-                <div class="modal-content p-3">
-                    <div class="col-sm-12">
-                        <div class="row mb-5">
-                            <div class="col-sm-10 justify-content-center d-flex">
-                                <h1 class="modal-title fs-5 justify-content-center d-flex" id="novoProjetoModalLabel">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content">
+                    <div class="col-sm-12 bg-body-secondary p-3">
+                        <div class="row ">
+                            <div class="col-sm-10 justify-content-start d-flex">
+                                <h1 class="modal-title fs-5 justify-content-start d-flex" id="novoProjetoModalLabel">
                                     Adicione um novo projeto</h1>
                             </div>
                             <div class="col-sm-2">
-                                <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                    aria-label="Close"></button>
+                                <div data-bs-dismiss="modal" aria-label="Close" class=>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="grey"
+                                        class="bi bi-x-circle pointer" viewBox="0 0 16 16">
+                                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+                                        <path
+                                            d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row ">
+                            <div class="col-sm-10 justify-content-start d-flex">
+                                <span class="fs-6 text-body-secondary justify-content-start d-flex">
+                                    Preencha as informações abaixo
+                                </span>
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-12">
+                    <div class="col-sm-12 p-3">
                         <div class="row mb-3">
-                            <div class="col-sm-8">
-                                <div class="row mb-3">
-                                    <div class="col-sm-12 justify-content-center d-flex">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"
-                                            fill="currentColor" class="bi bi-cloud-arrow-down-fill" viewBox="0 0 16 16">
-                                            <path
-                                                d="M8 2a5.53 5.53 0 0 0-3.594 1.342c-.766.66-1.321 1.52-1.464 2.383C1.266 6.095 0 7.555 0 9.318 0 11.366 1.708 13 3.781 13h8.906C14.502 13 16 11.57 16 9.773c0-1.636-1.242-2.969-2.834-3.194C12.923 3.999 10.69 2 8 2m2.354 6.854-2 2a.5.5 0 0 1-.708 0l-2-2a.5.5 0 1 1 .708-.708L7.5 9.293V5.5a.5.5 0 0 1 1 0v3.793l1.146-1.147a.5.5 0 0 1 .708.708" />
-                                        </svg>
-                                    </div>
-                                </div>
-                                <div class="row mb-3 ">
-                                    <div class="col-sm-12 justify-content-center d-flex">Clique para escolher arquivo ou
-                                        arraste e solte</div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-sm-12 justify-content-center d-flex"><input type="file" id="img"
-                                            name="img" accept="image/*"></div>
-                                </div>
-                                <div class="row mb-3 text-body-secondary">
-                                    <div class="col-sm-12 justify-content-center d-flex">pdf, svg...</div>
-                                </div>
-
+                            <div class="col-sm-7">
                                 <div class="row mb-3">
                                     <label for="nomeProjetoInput" class="form-label">Nome do projeto</label>
-                                    <div class="col-sm-12 justify-content-center d-flex">
+                                    <div class="col-sm-12 justify-content-start d-flex">
                                         <input type="text" class="form-control" id="nomeProjetoInput">
                                     </div>
                                 </div>
@@ -195,27 +125,37 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-sm-4">
+                            <div class="col-sm-5">
                                 <div class="row mb-3">
                                 </div>
-                                <div class="row mb-3 ">
-                                    <div class="col-sm-12 justify-content-center d-flex">Membros</div>
+                                <div class="row">
+                                    <div class="col-sm-12 justify-content-start d-flex">Membros</div>
                                 </div>
                                 <div class="row mb-3 text-body-secondary">
-                                    <div class="col-sm-12 justify-content-center d-flex">Caso alguém tenha colaborado com você.</div>
+                                    <div class="col-sm-12 justify-content-start d-flex">Caso alguém tenha colaborado
+                                        com você.</div>
+                                </div>
+                                <div class="row mb-3">
+                                    <div class="col-sm-12 justify-content-start d-flex">
+                                        <svg poin xmlns="http://www.w3.org/2000/svg" width="25"
+                                            height="25" fill="grey" class="bi bi-plus-circle-dotted pointer"
+                                            viewBox="0 0 16 16">
+                                            <path
+                                                d="M8 0q-.264 0-.523.017l.064.998a7 7 0 0 1 .918 0l.064-.998A8 8 0 0 0 8 0M6.44.152q-.52.104-1.012.27l.321.948q.43-.147.884-.237L6.44.153zm4.132.271a8 8 0 0 0-1.011-.27l-.194.98q.453.09.884.237zm1.873.925a8 8 0 0 0-.906-.524l-.443.896q.413.205.793.459zM4.46.824q-.471.233-.905.524l.556.83a7 7 0 0 1 .793-.458zM2.725 1.985q-.394.346-.74.74l.752.66q.303-.345.648-.648zm11.29.74a8 8 0 0 0-.74-.74l-.66.752q.346.303.648.648zm1.161 1.735a8 8 0 0 0-.524-.905l-.83.556q.254.38.458.793l.896-.443zM1.348 3.555q-.292.433-.524.906l.896.443q.205-.413.459-.793zM.423 5.428a8 8 0 0 0-.27 1.011l.98.194q.09-.453.237-.884zM15.848 6.44a8 8 0 0 0-.27-1.012l-.948.321q.147.43.237.884zM.017 7.477a8 8 0 0 0 0 1.046l.998-.064a7 7 0 0 1 0-.918zM16 8a8 8 0 0 0-.017-.523l-.998.064a7 7 0 0 1 0 .918l.998.064A8 8 0 0 0 16 8M.152 9.56q.104.52.27 1.012l.948-.321a7 7 0 0 1-.237-.884l-.98.194zm15.425 1.012q.168-.493.27-1.011l-.98-.194q-.09.453-.237.884zM.824 11.54a8 8 0 0 0 .524.905l.83-.556a7 7 0 0 1-.458-.793zm13.828.905q.292-.434.524-.906l-.896-.443q-.205.413-.459.793zm-12.667.83q.346.394.74.74l.66-.752a7 7 0 0 1-.648-.648zm11.29.74q.394-.346.74-.74l-.752-.66q-.302.346-.648.648zm-1.735 1.161q.471-.233.905-.524l-.556-.83a7 7 0 0 1-.793.458zm-7.985-.524q.434.292.906.524l.443-.896a7 7 0 0 1-.793-.459zm1.873.925q.493.168 1.011.27l.194-.98a7 7 0 0 1-.884-.237zm4.132.271a8 8 0 0 0 1.012-.27l-.321-.948a7 7 0 0 1-.884.237l.194.98zm-2.083.135a8 8 0 0 0 1.046 0l-.064-.998a7 7 0 0 1-.918 0zM8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3z" />
+                                        </svg>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-12">
-                        <div class="row">
-                            <div class="col-sm-6 justify-content-center d-flex">
-                                <button type="button" class="btn btn-outline-secondary ps-5 pe-5"
+                    <div class="col-sm-12 bg-body-secondary">
+                        <div class="row p-3 pe-5">
+                            <div class="col-sm-11 justify-content-end d-flex fs-6">
+                                <button style="font-size: 14px;" type="button" class="btn btn-outline-secondary"
                                     data-bs-dismiss="modal">Fechar</button>
                             </div>
-                            <div class="col-sm-6 justify-content-center d-flex">
-                                <button type="button" class="btn btn-primary ps-5 pe-5">Salvar</button>
-
+                            <div class="col-sm-1 justify-content-center d-flex">
+                                <button style="font-size: 14px;" type="button" class="btn btn-primary">Salvar</button>
                             </div>
                         </div>
 
